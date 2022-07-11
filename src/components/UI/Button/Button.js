@@ -5,6 +5,7 @@ import styled from 'styled-components';
 // Будет создан объект кнопки со стилями переданными между кавычками
 // указание на стиль себя (кнопки) - заменяется на & если есть чтото. Если ничего нет, просто стили открыто передаются
 // такой способ tagged template literals
+// Медиа query - @media (min-width: 700px) - применение стилей к устройствам, шириной мин.700пикс.
 const Button = styled.button`
 
   font: inherit;
@@ -14,6 +15,11 @@ const Button = styled.button`
   border-radius: 4px;
   box-shadow: 0 0 4px rgba(50, 50, 50, 0.25);
   cursor: pointer;
+  
+  
+  @media (min-width: 700px) {
+    width: auto;
+  }
 
 
  &:focus {
