@@ -12,12 +12,14 @@ const FormControl = styled.div`
   font-weight: bold;
   display: block;
   margin-bottom: 0.5rem;
+  color: ${(props) => (props.invalidParam ? "red" : "black")};
 }
 
 & input {
   display: block;
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid ${(props) => (props.invalidParam ? "red" : "#ccc")};
+  background: ${(props) => (props.invalidParam ? "rgb(243, 157, 157)" : "transparent")};
   font: inherit;
   line-height: 1.5rem;
   padding: 0 0.25rem;
@@ -27,12 +29,6 @@ const FormControl = styled.div`
   outline: none;
   background: #c8e1e4;
   border-color: #00358b;
-}
-
-/*Ссылка на элемент у которого есть оба стиля, а также в нем инпут*/
-&.invalid input {
-  border-color: red;
-  background: rgb(243, 157, 157);
 }
 
 &.invalid label {
@@ -62,7 +58,8 @@ const TaskInput = (props) => {
 
   return (
     <form onSubmit={formSubmitHandler}>
-      <FormControl className={!isInputValid && 'invalid'}>
+      {/*<FormControl className={!isInputValid && 'invalid'}>*/}
+      <FormControl invalidParam={!isInputValid}>
         <label>Задачи</label>
         <input type="text" onChange={taskInputChangeHandler} />
       </FormControl>
