@@ -1,5 +1,7 @@
 ## Basic React application to manage tasks
 
+![screenshot](src/assets/Tasklist_screen.png)
+
 ### Very basic React application to manage tasks
 
 Features:
