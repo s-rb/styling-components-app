@@ -3,10 +3,8 @@ import React from "react";
 import "./Task.css";
 
 const Task = (props) => {
-  // const [deleteText, setDeleteText] = useState('');
 
   const deleteHandler = () => {
-    // setDeleteText('(Deleted!)');
     props.onDelete(props.id);
   };
 
