@@ -19,3 +19,5 @@ To build application:
 - run in terminal `npm run build`
 - you'll have your build in `build` directory
 - open `index.html` in your browser
+
+#### Demo is here: [click me!](http://tasklist.surkoff.com)
