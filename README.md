@@ -20,4 +20,4 @@ To build application:
 - you'll have your build in `build` directory
 - open `index.html` in your browser
 
-#### Demo is here: [click me!](http://tasklist.surkoff.com)
+#### Demo is here: [click me!](http://tasklist.surkoff.su)
